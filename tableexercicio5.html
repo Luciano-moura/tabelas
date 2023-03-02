@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas exercicio 5</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #title {
+            background-color: gray;
+            padding: 7px;
+            color: white;
+        }
+
+        table {
+            
+            border-collapse: collapse;
+        }
+
+        th, td {
+            width: 300px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exercícios Tabelas</h1>
+    <table>
+        <tfoot>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+        </tfoot>
+
+        <caption id="title">
+            Filmes Favoritos
+        </caption>
+
+        <thead>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="5" scope="colgroup" >Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Sousa</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Arquivo-X</td>
+                <td>Jurassic Word</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Ricardo Melo</td>
+                <td>Todo Mundo Em Pânico</td>
+                <td>Big Hero</td>
+                <td>Titanic</td>
+            </tr>
+            <tr>
+                <td>Luciano moura</td>
+                <td>Matrix</td>
+                <td>Avatar</td>
+                <td>Transforms</td>
+            </tr>
+            <tr>
+                <td>Gustavo Moura</td>
+                <td>Léo Caminhão</td>
+                <td>Galinha Pintatinha</td>
+                <td>Carros</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
